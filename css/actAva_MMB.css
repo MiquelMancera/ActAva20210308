@@ -1,0 +1,10 @@
+.botonsJPC {
+   display: flex;
+ }
+
+ .amagarMMB{
+   display:none;
+ }
+ .mostraMMB{
+  display:flex;
+}
