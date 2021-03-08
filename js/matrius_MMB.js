@@ -3,9 +3,14 @@ let llistaElements = document.getElementById("llistaElements");
 
 function afegirElementAColleccioMMB(){
   let elementAAfegir = document.getElementById("elementAAfegir");
-  colleccioElements.push(elementAAfegir.value);
-  alert("Element " + elementAAfegir.value + " agfegit correctament " + "\na la posició " + colleccioElements.indexOf(elementAAfegir.value))
-  document.getElementById('elementAAfegir').value = null;
+  if(elementAAfegir.value == ""){
+    alert("No hi ha cap element a afegir!");
+  }else{
+    colleccioElements.push(elementAAfegir.value);
+    alert("Element " + elementAAfegir.value + " agfegit correctament " + "\na la posició " + colleccioElements.indexOf(elementAAfegir.value))
+    document.getElementById('elementAAfegir').value = null;
+  }
+  
 }
 
 function mostrarElementsDeLaColleccio(){
