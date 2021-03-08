@@ -21,7 +21,9 @@ function mostrarElementsDeLaColleccio(){
   llistaElements.innerHTML = cadLlistaElem;
 }
 
-function netejaColleccio(){
-  colleccioElements="";
+function netejaColleccioMMB(){
+  document.getElementById('elementAAfegir').value = null;
+  llistaElements.innerHTML = null;
+  colleccioElements= new Array();
   alert("S'ha buidat la col·leció!");
 }
